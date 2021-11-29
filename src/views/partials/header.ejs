@@ -1,20 +1,32 @@
 <header>
     <div class="container">
-        <img src="">
-        <nav class="main-nav">
-            <ul>
-                <li><a href="/user/login">Login</a></li>
-                <li><a href="/user/register">Registro</a></li>
-                <li><a href="/products/cart">Carro</a></li>
-            </ul>
-        </nav>
+        <div class="logo">
+            <img src="/img/logo.png" alt="Logo personajes Mario" width="200px">
+        </div>
+        <div class="navbar">
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="/user/login">Login | </a></li>
+                    <li><a href="/user/register">Registro | </a></li>
+                    <li><a href="/products/cart">Carro</a></li>
+                </ul>
+            </nav>
+        </div>
     </div>
     <div class="container-two">
+        <div class="navbar-two">
             <nav class="secondary-nav">
                 <ul>
                     <li><a href="/">Inicio</a></li>
                     <li><a href="/products">Productos</a></li>
                 </ul>
             </nav>
+        </div>
+        <div class="search-bar">
+            <form action="/products/search" method="get">
+                <input type="text" name="search" placeholder="Buscar...">
+                <button type="submit">Buscar</button>
+            </form>
+        </div>
     </div>
 </header>
