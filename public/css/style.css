@@ -48,59 +48,201 @@ body {
     display: flex;
     justify-content: space-between;
 }
+.container-one{
+    width: 100%;
+    display: flex;
+    justify-content: center
+}
+.logo{
+    align-self: center;
+}
 .navbar{
     display: flex;
-    flex-direction: column-reverse;
-    align-items: flex-end;
 }
-.main-nav ul li{
-    display: inline;
-    align-self: flex-end;
+.main-nav{
+    display:none;
 }
+
 .container-two{
     width: 100%;
-    padding: 15px;
+    padding: 10px;
     background-color: #F037A5;
     border-bottom: 3px solid #fff;
     display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
 }
 .navbar-two{
     width: 50%;
+    align-self: center;
+    display: none;
 }
 .secondary-nav ul li{
     display: inline;
     padding-left: 10%;
 }
+.burger-menu{
+    align-self: center;
+    margin-left: 15%;
+    border: 3px solid #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
 .search-bar {
-    width: 50%;
+    margin-left: 15%;
+    align-self: center;    
 }
 .search-bar form{
-    width: 100;
 }
 .search-bar input{
     width: 60%;
+    height: 30px;
+    border-radius: 5px;
 }
+.search-bar .search-btn{
+    width: 17%;
+}
+
+/* Main */
+
+.main-container{
+    width: 100%;
+    padding: 10px;
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+}
+.banner{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.banner img{
+    width: 100%;
+    margin-top: 10px;
+    border: 3px solid #fff;
+    border-radius: 20px;
+}
+
 /* Register */
 input {
-    background-color: rgb(255, 255, 255);
+    background-color: #fff;
 }
 input:hover {
     color: rgb(0, 0, 0);
-    background-color: rgb(252, 214, 214);
+    background-color: #fff;
 }
 input:focus {
-    background-color: rgb(252, 214, 214);
+    background-color: #fff;
 }
 
 /*Footer*/
 
 footer{
     width: 100%;
-    padding: 15px;
+    padding: 0;
     position: absolute;
     bottom: 0;
     background-color: #2D46B9;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-self: flex-end;
+    flex-wrap: wrap;
+}
+
+footer .container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.redes {
+    display: flex;
+    align-items: center;
+}
+.redes li{
+    display: inline;
+    align-self: center;
+}
+.suscribe{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.suscribe input{
+    width: 100%;
+    height: 30px;
+    border-radius: 5px;
+}
+
+.map{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.map-container{
+    display:none;
+}
+.map iframe{
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+
+
+/*Detalle de producto*/
+
+/*Fin detalle de producto*/
+
+/*Usuarios*/
+.container-edit{
+    width: 100%;
+    padding: 10px;
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.edit-form{
+    width: 50%;
+    padding:auto;
+}
+/*Fin usuarios*/
+
+@media (min-width: 768px){
+    .container-one{
+        justify-content: space-between;
+    }
+    
+    .main-nav{
+        display: block;
+        flex-direction: column-reverse;
+    }
+    .main-nav{
+        position: relative;
+        align-self: flex-end;
+    }
+    .main-nav ul li{
+        display: inline;
+    
+    }
+    .burger-menu{
+        display: none;
+    }
+    .navbar-two{
+        width: 50%;
+        align-self: center;
+        display: block;
+    }
+    
+    /*Footer*/
+    .map-container{
+        display: block;
+    }
+    
 }

@@ -5,11 +5,6 @@ const productsController = require('../controllers/productsController');
 router.get('/', productsController.list);
 router.get('/detail/:id', productsController.detail);
 router.get('/cart', productsController.cart);
-
-/*
-app.get('/cart', productController.cart);
-app.get('/products', productController.list);
-app.get('/products/:id', productController.detail);
-*/
+router.get('/search', productsController.search);
 
 module.exports = router;
