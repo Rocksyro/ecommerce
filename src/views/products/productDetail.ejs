@@ -1,9 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-    <%- include('../partials/head.ejs') %> 
+    <%- include('../partials/head.ejs',{ pageTitle: 'Product Detail'} ) %> 
     <body>
         <%- include('../partials/header.ejs') %>
         
+        <h2> Detalle del producto <%= product.name %> </h2>
+        <img src="/img/products/<%= product.img  %> " alt="product" width="200">
+        <p><stron>Precio: $<%=product.price %></strong></p>
+        <p><strong>Descripción: <%=product.description %></strong></p>
         
         <%- include('../partials/footer.ejs') %>
     </body>

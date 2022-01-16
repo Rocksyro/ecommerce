@@ -1,23 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-    <%- include('./partials/head.ejs') %> 
+    <%- include('./partials/head.ejs',{ pageTitle: 'Home'} ) %> 
     <body>
         <%- include('./partials/header.ejs') %>
-        
-        <div class="main-container">
-            <div class="banner">
-                <img src="/img/banner1.jpeg" alt="banner">
-            </div>
-            <div class="home-container">
-                <div class="categoria1">
-                    <a href=""><img src=""></a>
+        <main>
+            <div class="main-container">
+                <div class="banner">
+                    <img src="/img/banner1.jpeg" alt="banner">
                 </div>
-                <div class="categoria2">
-                    <a href=""><img src=""></a>
+                <div class="home-container">
+                    <img src="/img/Consolas.png" alt="Consolas">
+                    <img src="/img/juegos.png" alt="Juegos">
                 </div>
             </div>
-        </div>
-        
+        </main>
         <%- include('./partials/footer.ejs') %>
     </body>
 </html>
