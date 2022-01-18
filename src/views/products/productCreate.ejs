@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include('../partials/head.ejs',{ pageTitle: 'Product Detail'} ) %> 
+    <body>
+        <%- include('../partials/header.ejs') %>
+        <main>
+            <div class="create">
+                <div class="create-container">
+                    <form action="/products" method="POST">
+                        <label for="name">Name</label>  
+                        <input type="text" name="name" id="name"><br>
+                        <label for="price">Price</label>
+                        <input type="number" name="price" id="price"><br>
+                        <label for="description">Description</label>
+                        <input type="text" name="description" id="description"><br>
+                        <label for="image">Image</label>
+                        <input type="file" name="image" id="image"><br>
+                        <label for="category">Category</label>
+                        <select name="category" id="category">
+                            <option value="1">Consolas</option>
+                            <option value="2">Juegos</option>
+                        </select><br>
+                        <button type="submit">Guardar</button>
+                    </form>
+                </div>
+            </div>
+        </main>
+        <%- include('../partials/footer.ejs') %>
+    </body>
+</html>

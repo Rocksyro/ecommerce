@@ -13,7 +13,7 @@ app.listen(3000, () => {
 app.set('view engine', 'ejs');
 app.set('views', 'src/views');
 
-app.use(express.urlencoded({ extended: false }));//Lo que llegue de un form lo captura y lo convierte en un objeto
+app.use(express.urlencoded({ extended: true }));//Lo que llegue de un form lo captura y lo convierte en un objeto
 app.use(express.json());//Poder convertir el body de una petición a un objeto JSON
 app.use(methodOverride('_method'));//Poder sobreescribir el método de un form
 

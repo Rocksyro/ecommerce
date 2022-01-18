@@ -32,6 +32,13 @@ a:active {
 
 }
 
+button{
+    color: #F8F8F8;
+    background-color: #F037A5;
+    border-radius: 3px;
+    padding: 3px;
+}
+
 body {
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
@@ -127,12 +134,23 @@ body {
     border-radius: 20px;
 }
 
-.home-container img{
+.home-container{
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-container img{
+    width: 80%;
     margin-top: 10px;
     border: 3px solid #fff;
     border-radius: 20px;
+    margin: 20px;
 }
+
+/*Products*/
 
 .products-container{
     width: 100%;
@@ -168,6 +186,14 @@ body {
     flex-direction: column;
     align-items: center;
     padding-top:10px;
+    justify-content: space-around;
+    
+}
+.description a{
+    color: #F8F8F8;
+    background-color: #F037A5;
+    border-radius: 3px;
+    padding: 3px;
 }
 .product-img{
     display: flex;
@@ -181,20 +207,60 @@ body {
     justify-content: center;
     width: 50%;
 }
+
+/* product-create */
+.create{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+}
+.create-container {
+    width: 70%;
+    min-height: 60vh;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #F8F8F8;
+    border-radius: 10px;
+    color:#1E3163;
+}
+.create-container form input{
+    border-radius: 5px;
+}
+.create-container form select{
+    border-radius: 5px;
+}
 /* Register */
-input {
-    background-color: #fff;
+
+.register{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
 }
-input:hover {
-    color: rgb(0, 0, 0);
-    background-color: #fff;
+.container-register{
+    width: 50%;
+    background-color: #F8F8F8;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    margin: 15px;
+    border-radius: 10px;
+    padding: 10px;
+    color: #1E3163;
+    align-items: center;
 }
-input:focus {
-    background-color: #fff;
-}
+
 /* Login */
 .main-login {
     width: 100%;
+    min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -205,6 +271,7 @@ input:focus {
     width: 50%;
     background-color: #F8F8F8;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     justify-content: center;
     margin: 15px;
@@ -332,14 +399,10 @@ footer .container{
     
     /*Main*/
     .home-container{
-        display:flex;
         flex-direction: row;
-        justify-content: center;
-        flex-wrap: wrap;
     }
     .home-container img{
         width: 45%;
-        margin: 10px;
     }
 
     /*Products*/

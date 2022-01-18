@@ -12,11 +12,12 @@
                         <% products.forEach(function(product){ %>
                         <div class="card">
                                 <div class="product-img">
-                                    <img src="../img/products/<%= product.img %>" alt="product">
+                                    <a href="/products/<%= product.id %>"><img src="../img/products/<%= product.img %>" alt="product"></a>
                                 </div>
                             <div class="description">
-                                <h4><%= product.name %></h4><br>
+                                <h4><%= product.name %></h4>
                                 <p>$<%=product.price %></p>
+                                <a href="/products/<%= product.id %>">Ver más</a>
                             </div>
                         </div>
                         <% }) %>

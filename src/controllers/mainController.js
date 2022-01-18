@@ -1,16 +1,13 @@
 const fs = require('fs');
 const path = require('path');
 
-const productsJSON = path.join(__dirname, '../database/products.json');
+const productsJSON = path.resolve(__dirname, '../database/products.json');//Más seguro utilizar el path.resolve
 const products = JSON.parse(fs.readFileSync(productsJSON, 'utf-8'));
-
-const toThousand = n => n.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
 
 const controller = {
     index: (req, res) => {
         res.render('index', {
-			products,
-			toThousand
+			products
 		});
     }
 }
