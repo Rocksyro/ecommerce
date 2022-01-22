@@ -5,17 +5,17 @@ const multer = require('multer');
 const path = require('path');
 const { body } = require('express-validator');
 
-/*const storage = multer.diskStorage({
+const storage = multer.diskStorage({
     destination: (req, file, cb) => {
-        cb(null, '../public/img/products')
+        cb(null, path.resolve(__dirname, '../../public/img/products'));
     },
     filename: (req, file, cb) => {
-        let fileName = `${Date.now()}_img${path.extname(file.originalName)}`;
+        let fileName = `${Date.now()}_img${path.extname(file.originalname)}`;
         cb(null, fileName);
     }
 })
 
-const uploadFile = multer ({ storage }); */
+const uploadFile = multer ({ storage }); 
 
 router.get('/', productsController.list);
 router.get('/create', productsController.create);
@@ -25,10 +25,10 @@ router.post('/', [
     body('description').isLength({ min: 15 }),
     body('image').notEmpty(),
     body('category').notEmpty(),
-], productsController.store);
+], uploadFile.single("image"), productsController.store);
 
 router.get('/:id', productsController.detail);
-
+router.delete('/:id', productsController.delete);
 
 /*router.get('/create', productsController.create);
 router.post('/create', uploadFile.single('image'), productsController.store);

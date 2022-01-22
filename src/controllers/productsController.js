@@ -17,10 +17,6 @@ const controller = {
 		});
     },
     detail: (req, res) => {
-        /*
-        let idProduct = req.params.id
-        res.sendFile(__dirname + '/views/products/productDetail.html')
-        */
         const productId = req.params.id;
 
         const theProduct = products.find(thisProduct => thisProduct.id == productId);
@@ -33,22 +29,25 @@ const controller = {
         res.render('products/productCreate');
     },
     store: (req, res) => {
-        console.log(req.body);
-        return res.send(req.body);
-        /*products.push(req.body);
-        fs.writeFileSync(productsJSON, JSON.stringify(products, null, ' '));*/
-        
-        /*const newProduct = {
-            id: products.length + 1,
-            name: req.body.name,
-            price: req.body.price,
-            image: req.file.filename,
-            description: req.body.description,
+        const generateId = () => {
+            const lastProduct = products[products.length - 1]; //Último prod almacenado en la bd
+            const lastId = lastProduct.id; //Obtenemos id de ese último prod
+            return lastId + 1; // Retornamos ese último Id incrementado en 1
         }
-        products.push(newProduct);
+        
+        products.push({
+            id: generateId(),
+            ...req.body,
+            image: req.file.filename,
+        });
         fs.writeFileSync(productsJSON, JSON.stringify(products, null, ' '));
         res.redirect('/products');
-        */
+    },
+    delete: (req, res) => {
+        const newArrayProducts = products.filter(p => p.id !== Number(req.params.id));
+
+        fs.writeFileSync(productsJSON, JSON.stringify(newArrayProducts, null, ' '));
+        return res.redirect('/products');
     },
 
     /*
@@ -56,11 +55,9 @@ const controller = {
         res.render('products/cart');
     },
     search: (req, res) => {
-        let busqueda = req.query.search;
-        res.send(busqueda);
     }
     update:
-    delete:*/
+    */
 }
 
 module.exports = controller;

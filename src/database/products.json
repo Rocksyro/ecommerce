@@ -1,66 +1,66 @@
 [
-    {
-        "id":1,
-        "name":"Mario Aces",
-        "price":7000,
-        "description":"Description of the product",
-        "img":"aces.jpeg",
-        "category":"sports"
-    },
-    {
-        "id":2,
-        "name":"Mario Maker 2",
-        "price": 9000,
-        "description":"Description of the product",
-        "img":"maker2.png",
-        "category":"adventure"
-    },
-    {
-        "id":3,
-        "name":"Mario Rabbids",
-        "price":7000,
-        "description":"Description of the product",
-        "img":"rabbids.png",
-        "category":"strategy"
-    },
-    {
-        "id":4,
-        "name":"Super Smash",
-        "price":11000,
-        "description":"In congue. Etiam justo. Etiam pretium iaculis justo.",
-        "img":"smash.jpeg",
-        "category":"fighting"
-    },
-    {
-        "id":5,
-        "name":"Mario Kart 8",
-        "price":9500,
-        "description":"Aliquam quis turpis eget elit sodales scelerisque. Mauris sit amet eros. Suspendisse accumsan tortor quis turpis.\n\nSed ante. Vivamus tortor. Duis mattis egestas metus.",
-        "img":"mk8.jpeg",
-        "category":"juegos"
-    },
-    {
-        "id":6,
-        "name":"Mario 3D World",
-        "price":9000,
-        "description":"Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus vestibulum sagittis sapien. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.\n\nEtiam vel augue. Vestibulum rutrum rutrum neque. Aenean auctor gravida sem.",
-        "img":"3dworld.jpeg",
-        "category":"juegos"
-    },
-    {
-        "id":7,
-        "name":"Luckys Tale",
-        "price":6500,
-        "description":"Aliquam quis turpis eget elit sodales scelerisque. Mauris sit amet eros. Suspendisse accumsan tortor quis turpis.\n\nSed ante. Vivamus tortor. Duis mattis egestas metus.",
-        "img":"luckys.jpeg",
-        "category":"juegos"
-    },
-    {
-        "id":8,
-        "name":"Dead Cells",
-        "price":8900,
-        "description":"Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus vestibulum sagittis sapien. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.\n\nEtiam vel augue. Vestibulum rutrum rutrum neque. Aenean auctor gravida sem.",
-        "img":"deadcells.jpeg",
-        "category":"juegos"
-    }
+ {
+  "id": 1,
+  "name": "Mario Aces",
+  "price": 7000,
+  "description": "Description of the product",
+  "image": "aces.jpeg",
+  "category": "sports"
+ },
+ {
+  "id": 2,
+  "name": "Mario Maker 2",
+  "price": 9000,
+  "description": "Description of the product",
+  "image": "maker2.png",
+  "category": "adventure"
+ },
+ {
+  "id": 3,
+  "name": "Mario Rabbids",
+  "price": 7000,
+  "description": "Description of the product",
+  "image": "rabbids.png",
+  "category": "strategy"
+ },
+ {
+  "id": 4,
+  "name": "Super Smash",
+  "price": 11000,
+  "description": "In congue. Etiam justo. Etiam pretium iaculis justo.",
+  "image": "smash.jpeg",
+  "category": "fighting"
+ },
+ {
+  "id": 5,
+  "name": "Mario Kart 8",
+  "price": 9500,
+  "description": "Aliquam quis turpis eget elit sodales scelerisque. Mauris sit amet eros. Suspendisse accumsan tortor quis turpis.\n\nSed ante. Vivamus tortor. Duis mattis egestas metus.",
+  "image": "mk8.jpeg",
+  "category": "juegos"
+ },
+ {
+  "id": 6,
+  "name": "Mario 3D World",
+  "price": 9000,
+  "description": "Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus vestibulum sagittis sapien. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.\n\nEtiam vel augue. Vestibulum rutrum rutrum neque. Aenean auctor gravida sem.",
+  "image": "3dworld.jpeg",
+  "category": "juegos"
+ },
+ {
+  "id": 7,
+  "name": "Luckys Tale",
+  "price": 6500,
+  "description": "Aliquam quis turpis eget elit sodales scelerisque. Mauris sit amet eros. Suspendisse accumsan tortor quis turpis.\n\nSed ante. Vivamus tortor. Duis mattis egestas metus.",
+  "image": "luckys.jpeg",
+  "category": "juegos"
+ },
+ {
+  "id": 8,
+  "name": "Dead Cells",
+  "price": 8900,
+  "description": "Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus vestibulum sagittis sapien. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.\n\nEtiam vel augue. Vestibulum rutrum rutrum neque. Aenean auctor gravida sem.",
+  "image": "deadcells.jpeg",
+  "category": "juegos"
+ }
 ]

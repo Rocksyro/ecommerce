@@ -342,6 +342,39 @@ footer .container{
 
 
 /*Detalle de producto*/
+.details{
+    min-height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.product-detail{
+    width: 80%;
+    min-height: 60vh;
+    background-color: #F8F8F8;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 15px;
+    border-radius: 10px;
+    padding: 10px;
+    color: #1E3163;
+    align-items: center;
+}
+.product-detail .title-img{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.product-detail a, button{
+    color: #F8F8F8;
+    background-color: #F037A5;
+    border-radius: 3px;
+    padding: 3px;
+}
 
 /*Fin detalle de producto*/
 
@@ -414,6 +447,17 @@ footer .container{
     }
     .card{
         width: 45%;
+    }
+
+    /*Product-detail*/
+    .product-detail{
+        width: 80%;
+        flex-direction: row;
+        justify-content:space-around;
+    }
+    .product-detail .buttons{
+        display: flex;
+        
     }
 }
 

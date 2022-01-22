@@ -3,12 +3,25 @@
     <%- include('../partials/head.ejs',{ pageTitle: 'Product Detail'} ) %> 
     <body>
         <%- include('../partials/header.ejs') %>
-        
-        <h2> Detalle del producto <%= product.name %> </h2>
-        <img src="/img/products/<%= product.img  %> " alt="product" width="200">
-        <p><stron>Precio: $<%=product.price %></strong></p>
-        <p><strong>Descripción: </strong> <%=product.description %></p>
-        
+        <main class="details">
+            <section class="product-detail">
+                <div class="title-img">
+                    <h2> Detalle del producto <%= product.name %> </h2><br>
+                    <img src="/img/products/<%= product.image  %> " alt="product" width="200">
+                </div>
+                <div class="detail-description">
+                    <p><strong>Precio:</strong> $<%=product.price %></p>
+                    <p><strong>Descripción: </strong> <%=product.description %></p>
+                </div>
+                <div class="buttons">
+                    <a href="/products/create">Editar</a>
+                    <button>Agregar al carrito</button>
+                </div>
+                <form action="/products/<%=product.id%>?_method=DELETE" method="post">
+                    <button type="submit">Eliminar</button>
+                </form>
+            </section>
+        </main>
         <%- include('../partials/footer.ejs') %>
     </body>
 </html>
